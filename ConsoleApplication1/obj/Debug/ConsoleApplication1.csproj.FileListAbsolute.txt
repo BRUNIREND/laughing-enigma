@@ -1,0 +1,15 @@
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\BusinessLog.dll
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\Mod.dll
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\WindowsFormsApp2.exe
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\BusinessLog.pdb
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\Mod.pdb
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.SuggestedBindingRedirects.cache
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CopyComplete
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\yaros\RiderProjects\WindowsFormsApp2\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

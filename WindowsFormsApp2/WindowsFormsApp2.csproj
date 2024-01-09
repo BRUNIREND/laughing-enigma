@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{6D2FA6E8-B433-4F87-86E0-45BFE3225434}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>WindowsFormsApp2</RootNamespace>
+        <AssemblyName>WindowsFormsApp2</AssemblyName>
+        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <Deterministic>true</Deterministic>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>..\packages\Dapper.2.1.21\lib\net461\Dapper.dll</HintPath>
+        </Reference>
+        <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+          <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+        </Reference>
+        <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+          <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+        </Reference>
+        <Reference Include="GLWpfControl, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>..\packages\OpenTK.GLWpfControl.3.3.0\lib\net452\GLWpfControl.dll</HintPath>
+        </Reference>
+        <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+          <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+        </Reference>
+        <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+          <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib" />
+        <Reference Include="Ninject, Version=3.3.3.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+          <HintPath>..\packages\Ninject.3.3.3\lib\net45\Ninject.dll</HintPath>
+        </Reference>
+        <Reference Include="Ninject.Web.Common, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+          <HintPath>..\packages\Ninject.Web.Common.3.3.0\lib\net45\Ninject.Web.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="Ninject.Web.Common.WebHost, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+          <HintPath>..\packages\Ninject.Web.Common.WebHost.3.3.0\lib\net45\Ninject.Web.Common.WebHost.dll</HintPath>
+        </Reference>
+        <Reference Include="Ninject.Web.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+          <HintPath>..\packages\Ninject.MVC5.3.3.0\lib\net45\Ninject.Web.Mvc.dll</HintPath>
+        </Reference>
+        <Reference Include="OpenTK, Version=3.3.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+          <HintPath>..\packages\OpenTK.3.3.1\lib\net20\OpenTK.dll</HintPath>
+        </Reference>
+        <Reference Include="ScottPlot, Version=4.1.68.0, Culture=neutral, PublicKeyToken=86698dc10387c39e, processorArchitecture=MSIL">
+          <HintPath>..\packages\ScottPlot.4.1.68\lib\net462\ScottPlot.dll</HintPath>
+        </Reference>
+        <Reference Include="SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+          <HintPath>..\packages\SkiaSharp.2.88.6\lib\net462\SkiaSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="SkiaSharp.Views.Desktop.Common, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+          <HintPath>..\packages\SkiaSharp.Views.Desktop.Common.2.88.6\lib\net462\SkiaSharp.Views.Desktop.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="SkiaSharp.Views.WPF, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+          <HintPath>..\packages\SkiaSharp.Views.WPF.2.88.6\lib\net462\SkiaSharp.Views.WPF.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.DataAnnotations" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Drawing.Common, Version=4.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Drawing.Common.4.7.3\lib\net461\System.Drawing.Common.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web" />
+        <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Windows.Forms.DataVisualization" />
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Data.DataSetExtensions" />
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Deployment" />
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Net.Http" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Add_student_view.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Add_student_view.Designer.cs">
+          <DependentUpon>Add_student_view.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Form1.cs">
+            <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Form1.Designer.cs">
+            <DependentUpon>Form1.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Gistagramm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Gistagramm.Designer.cs">
+          <DependentUpon>Gistagramm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Program.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <EmbeddedResource Include="Add_student_view.resx">
+          <DependentUpon>Add_student_view.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Form1.resx">
+          <DependentUpon>Form1.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Gistagramm.resx">
+          <DependentUpon>Gistagramm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Properties\Resources.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+            <SubType>Designer</SubType>
+        </EmbeddedResource>
+        <Compile Include="Properties\Resources.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        <None Include="OpenTK.dll.config" />
+        <None Include="packages.config" />
+        <None Include="Properties\Settings.settings">
+            <Generator>SettingsSingleFileGenerator</Generator>
+            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+        </None>
+        <Compile Include="Properties\Settings.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Settings.settings</DependentUpon>
+            <DesignTimeSharedInput>True</DesignTimeSharedInput>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="table.txt" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\BusinessLog\BusinessLog.csproj">
+        <Project>{e40136c8-a2c3-41a6-a78e-3e1cdbbe52c4}</Project>
+        <Name>BusinessLog</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Mod\Mod.csproj">
+        <Project>{fe28dd14-470d-4798-8958-514f1c04f48c}</Project>
+        <Name>Mod</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+      <PropertyGroup>
+        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+      </PropertyGroup>
+      <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+      <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+      <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+      <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    </Target>
+    <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+    <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
